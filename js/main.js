@@ -121,14 +121,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-
-  // Parallax effect for hero section
-  const hero = document.querySelector('.hero');
-  if (hero) {
-    window.addEventListener('scroll', () => {
-      const scrollPosition = window.pageYOffset;
-      hero.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
-    });
-  }
-  
