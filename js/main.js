@@ -15,20 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       bars.forEach(bar => bar.classList.toggle('change'));
     });
   }
-
-    // Header scroll effect
-  const header = document.querySelector('.header');
   
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-      header.style.background = 'rgba(255, 255, 255, 0.95)';
-      header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-    } else {
-      header.style.background = 'rgba(255, 255, 255, 0.9)';
-      header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-    }
-  });
- 
   // Close mobile menu when clicking on a nav link
   const navLinks = document.querySelectorAll('.nav-menu a');
   
@@ -42,9 +29,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  // Header scroll effect
+  const header = document.querySelector('.header');
   
-
-
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      header.style.background = 'rgba(255, 255, 255, 0.95)';
+      header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    } else {
+      header.style.background = 'rgba(255, 255, 255, 0.9)';
+      header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    }
+  });
+  
   // Scroll to top button
   const scrollTopBtn = document.getElementById('scrollTop');
   
@@ -65,6 +62,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-
- 
-});
