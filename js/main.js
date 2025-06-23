@@ -1,5 +1,15 @@
 // Main functionality for Lypivka Village website
 
+
+// Activate initial animations
+setTimeout(() => {
+  const fadeElements = document.querySelectorAll('.fade-in');
+  fadeElements.forEach(element => {
+    element.classList.add('active');
+  });
+}, 300);
+
+
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile menu toggle
   const mobileMenu = document.getElementById('mobile-menu');
